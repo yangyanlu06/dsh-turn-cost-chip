@@ -1,0 +1,50 @@
+{
+  "name": "dsh-turn-cost-chip",
+  "version": "1.0.0",
+  "description": "Show what each reply costs, in CNY, inside DeepSeek Harness",
+  "type": "module",
+  "license": "MIT",
+  "author": "yangyanlu06",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "cost",
+    "cny",
+    "token-usage"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangyanlu06/dsh-turn-cost-chip.git"
+  },
+  "homepage": "https://github.com/yangyanlu06/dsh-turn-cost-chip#readme",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-chat",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}
