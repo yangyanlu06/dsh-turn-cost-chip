@@ -22,7 +22,7 @@
    - Repository access：**All repositories**（建仓库和后续 fork 都要用）；
    - Permissions → Repository permissions：**Contents: Read and write**、**Pull requests: Read and write**；
    - 生成后**只显示一次**，复制下来。
-4. 把 token 存成一个**工作区之外**的一行文本文件，例如 `C:\Users\39732\.dsh\gh-token.txt`（别放进 `dsh-turn-cost/` 目录，那个目录会被整体上传）。
+4. 把 token 存成一个**插件目录之外**的一行文本文件，例如 `%USERPROFILE%\.dsh\gh-token.txt`（别放进插件目录，那个目录会被整体上传）。
 5. 注册完告诉我你的 **GitHub 用户名** 和想用的 **仓库名**（建议 `dsh-turn-cost-chip`），剩下的脚本我来跑。
 
 > 注册之前/之后都能先分发：`dist\dsh-turn-cost-chip-1.0.0.tgz` 已经打好了，对方执行
