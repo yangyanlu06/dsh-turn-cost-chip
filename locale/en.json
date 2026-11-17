@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Turn cost",
+    "description": "Shows what each reply cost in CNY, plus the running conversation total under the composer. Estimated from DeepSeek list prices and the peak/off-peak band, reading only token usage the Session already recorded: no extra request, no log write, no change to the conversation. Prices live in the RATES table in client.js; subagent work bills in its own Session, and Chinese public holidays price at the weekday band.",
+    "detail": "docs/DETAIL.md"
+  }
+}
