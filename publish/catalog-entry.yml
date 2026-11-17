@@ -1,0 +1,8 @@
+# 提交给 awesome-dsh-plugin 的条目模板（publish/submit-catalog.ps1 会自动替换占位符）
+# 规则：只写功能、不带营销词；描述会被维护者对照代码核对。
+url: __GITHUB_URL__
+name: __OWNER__/__REPO__
+category: usage
+description:
+  en: Shows each completed reply's cost in CNY as one line at the end of the reply, plus the conversation total in the composer dock, priced from DeepSeek list prices with the peak and off-peak band. It reads only token usage the Session already recorded, sends no extra request, and exposes the same breakdown to screen readers.
+  zh: 在每条完成的回复末尾显示这一轮的人民币花费，并在输入框下方显示本次会话累计；按 DeepSeek 官方刊例价与高峰/空闲时段计价。只读取会话里已记录的 token 用量，不发额外请求，并把同样的明细提供给读屏软件。
